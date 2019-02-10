@@ -1,0 +1,21 @@
+<div class="content">
+	<button ng-click="order='name'">Order by Name</button>
+	<button ng-click="order='belt'">Order by Belt</button>
+	<input type="text" ng-model="search" placeholder="Search for a ninja">
+	<ul id="ninjaList">
+		<li ng-repeat="ninja in ninjas | orderBy : order | filter : search" ng-show="ninja.available">
+			<!-- <img src="{{ninja.thumb}}" style="margin:-12px 10px 0 0; float: left; width: 50px" /> it works but gives error of 404, so we use ng-src -->
+			<img ng-src="{{ninja.thumb}}" style="margin:-12px 10px 0 0; float: left; width: 50px" ng-show="ninja.thumb"/>
+			<h3>{{ninja.name}} - {{ninja.rate | currency}}</h3> <!-- By default $ currency is used, we can change the currency by using currency:'#' -->
+			<div class="remove" ng-click="removeNinja(ninja)">x</div>
+			<span class="belt" style="background: {{ninja.belt}}">{{ninja.belt}} belt</span>
+		</li>
+	</ul>
+	<form ng-submit="addNinja()">
+		<input type="text" placeholder="Name" ng-model="newninja.name" />
+		<input type="text" placeholder="Belt" ng-model="newninja.belt" />
+		<input type="text" placeholder="Rate" ng-model="newninja.rate" />
+		<input type="submit" value="Add New Ninja" />
+	</form>
+	<a href="" ng-click="removeAll()">Remove All</a>
+</div>

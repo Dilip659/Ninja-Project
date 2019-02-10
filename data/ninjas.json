@@ -1,0 +1,46 @@
+[{
+	"name": "dilip",
+	"belt": "black",
+	"rate": 50,
+	"available": true,
+	"thumb": "content/image/dilip.jpg"
+}, {
+	"name": "kajol",
+	"belt": "yellow",
+	"rate": 40,
+	"available": true,
+	"thumb": "content/image/kajol.jpg"
+}, {
+	"name": "devansh",
+	"belt": "orange",
+	"rate": 30,
+	"available": true,
+	"thumb": "content/image/devansh.jpg"
+}, {
+	"name": "bhattu",
+	"belt": "green",
+	"rate": 20,
+	"available": true,
+	"thumb": "content/image/bhattu.jpg"
+}, {
+	"name": "deezu",
+	"belt": "red",
+	"rate": 10,
+	"available": true,
+	"thumb": "content/image/deezu.jpg"
+}, {
+	"name": "abhishek",
+	"belt": "pink",
+	"rate": 10,
+	"available": false
+}, {
+	"name": "shahid",
+	"belt": "blue",
+	"rate": 10,
+	"available": false
+}, {
+	"name": "jahoor",
+	"belt": "crimson",
+	"rate": 10,
+	"available": false
+}]
